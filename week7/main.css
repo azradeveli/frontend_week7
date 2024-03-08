@@ -1,0 +1,376 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.about {
+  margin: 1% auto 20%;
+}
+.about .top {
+  text-align: center;
+  margin-top: 12%;
+}
+.about .top h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.about .top p {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(30, 30, 30, 0.5);
+  margin: 1% auto 3%;
+}
+.about .inform {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about .inform .info {
+  width: 30%;
+  text-align: center;
+  margin: 1%;
+}
+.about .inform .info h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 2% 0px 3%;
+}
+.about .inform .info p {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(30, 30, 30, 0.5);
+  width: 80%;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 500vh;
+  font-family: "Poppins", sans-serif;
+}
+body .landingPage {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 7%;
+}
+body .landingPage header {
+  height: 10%;
+  /** display: flex;
+  justify-content: space-between; **/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  margin: 4% auto;
+}
+body .landingPage header h1 {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 700;
+  font-size: 27px;
+  width: auto;
+  display: inline;
+}
+body .landingPage header nav {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+body .landingPage header nav ul {
+  height: 4%;
+  display: flex;
+  justify-content: center;
+}
+body .landingPage header nav ul li {
+  list-style-type: none;
+}
+body .landingPage header nav ul li a {
+  text-decoration: none;
+  color: rgba(30, 30, 30, 0.5);
+  font-weight: 600;
+  margin: 30px;
+}
+body .landingPage header nav ul li:first-child a {
+  color: rgb(30, 30, 30);
+}
+body .landingPage header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+.search {
+  background-color: rgb(193, 220, 220);
+  height: 60vh;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.search .left {
+  width: 40%;
+  margin: 4%;
+}
+.search .left h2 {
+  font-weight: bolder;
+  font-size: 400%;
+  line-height: 100%;
+}
+.search .left .textArea {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 20px;
+  margin-left: 0px;
+}
+.search .left .textArea .inDiv {
+  text-align: left;
+  margin-left: 0px;
+}
+.search .left .textArea .inDiv h3 {
+  font-weight: normal;
+  font-size: 2rem;
+}
+.search .left .textArea .inDiv p {
+  font-weight: normal;
+  font-size: 18px;
+}
+.search .left .textArea .line {
+  border-right: 1px solid black;
+  height: 64px;
+}
+.search .left .searchBox {
+  height: 16%;
+  width: 87%;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1.5%;
+  margin-top: 10%;
+}
+.search .left .searchBox p {
+  font-size: 110%;
+  color: rgba(30, 30, 30, 0.5);
+  line-height: 300%;
+  font-weight: 600;
+  margin-left: 3%;
+}
+.search .left .searchBox img {
+  width: 11%;
+  height: 100%;
+  background-color: rgb(193, 220, 220);
+  border: 10px solid rgb(193, 220, 220);
+  border-radius: 20%;
+  padding: 2px;
+}
+.search .imgArea {
+  width: 50%;
+  position: relative;
+}
+.search .imgArea img:nth-child(2) {
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  z-index: 1;
+}
+.search .imgArea img:nth-child(1), .search .imgArea .categories .sec img.cats:nth-child(3), .categories .sec .search .imgArea img.cats:nth-child(3) {
+  position: absolute;
+  bottom: 17%;
+  left: -17%;
+}
+.search .imgArea img:nth-child(3) {
+  position: absolute;
+  right: 4%;
+  top: 2%;
+}
+.search .imgArea .rect {
+  position: absolute;
+  bottom: 0px;
+  right: 82%;
+}
+
+.bestSelling {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 7%;
+}
+.bestSelling .textPlants {
+  width: 25%;
+}
+.bestSelling .textPlants h3 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.bestSelling .textPlants p {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(30, 30, 30, 0.5);
+  width: 75%;
+  margin: 3% 0px 10%;
+}
+.bestSelling .textPlants button {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(30, 30, 30);
+  width: 170px;
+  height: 50px;
+  background-color: rgb(193, 220, 220);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 18px;
+  border: none;
+  border-radius: 8px;
+}
+.bestSelling .plants {
+  width: 28%;
+  font-size: 18px;
+  margin-left: 4%;
+}
+.bestSelling .plants img {
+  width: 100%;
+}
+.bestSelling .plants h4 {
+  color: rgb(30, 30, 30);
+  font-weight: 600;
+  margin: 2px 0%;
+}
+.bestSelling .plants p {
+  color: rgba(30, 30, 30, 0.5);
+}
+
+/*
+.about {
+    margin: 1% auto 20%;
+    .top {
+        text-align: center;
+        margin-top: 12%;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 700;
+
+        }
+
+        p {
+            font-size: $favFont; 
+            font-weight: 600;
+            color: rgba(30, 30, 30, 0.5);
+            margin: 1% auto 3%;
+        }
+    }
+
+    .inform {
+        @include ort(flex, space-evenly);
+        align-items: center; //Yatayda ortala
+        flex-wrap: wrap; //Yetersiz genişlikte yan yana sıralamak için gerekli
+
+        .info {
+            width: 30%;
+            text-align: center;
+            margin: 1%;
+
+            h4 {
+                font-size: $favFont; 
+                font-weight: 700;
+                margin: 2% 0px 3%;
+            }
+
+            p {
+                font-size: $favFont; 
+                font-weight: 600;
+                color: rgba(30, 30, 30, 0.5);
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
+}
+*/
+.categories .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12%;
+}
+.categories .top h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.categories .top p {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(30, 30, 30, 0.5);
+  margin: 1% auto 3%;
+}
+.categories .sec {
+  background-color: rgb(193, 220, 220);
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4%;
+}
+.categories .sec .cats, .categories .sec .cats:nth-child(3) {
+  width: 30%;
+  text-align: center;
+}
+.categories .sec .cats h4, .categories .sec .cats:nth-child(3) h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 2% 0px 3%;
+}
+.categories .sec .cats p, .categories .sec .cats:nth-child(3) p {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(30, 30, 30, 0.5);
+  width: 80%;
+  margin: auto;
+}
+.categories .sec .cats button, .categories .sec .cats:nth-child(3) button {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(30, 30, 30);
+  width: 35%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  margin: 4% auto;
+  padding: 15px;
+}
+.categories .sec .cats:nth-child(1), .categories .sec .cats:nth-child(3) {
+  margin-top: -3.5%;
+}
+.categories .sec .cats:nth-child(2) {
+  margin-top: 3.5%;
+}
+/*   alternative
+
+        @mixin cats-style {
+            margin-top: -3.5%;
+        }
+
+        .cats:nth-child(1) {
+            @include cats-style;
+        }
+
+        .cats:nth-child(2) {
+            margin-top: 3.5%;
+        }
+
+        .cats:nth-child(3) {
+            @include cats-style;
+        }
+
+        *//*# sourceMappingURL=main.css.map */

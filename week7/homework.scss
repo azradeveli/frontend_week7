@@ -1,0 +1,52 @@
+//homework: about us
+@import"fav.scss";
+
+
+
+.about {
+    margin: 1% auto 20%;
+
+    .top {
+        text-align: center;
+        margin-top: 12%;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 700;
+
+        }
+
+        p {
+            font-size: $favFont;
+            font-weight: 600;
+            color: rgba(30, 30, 30, 0.5);
+            margin: 1% auto 3%;
+        }
+    }
+
+    .inform {
+        @include ort(flex, space-evenly);
+        align-items: center;
+        flex-wrap: wrap;
+
+        .info {
+            width: 30%;
+            text-align: center;
+            margin: 1%;
+
+            h4 {
+                font-size: $favFont;
+                font-weight: 700;
+                margin: 2% 0px 3%;
+            }
+
+            p {
+                font-size: $favFont;
+                font-weight: 600;
+                color: rgba(30, 30, 30, 0.5);
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
+}
