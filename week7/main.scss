@@ -397,7 +397,7 @@ body {
         }
 
         .cats:nth-child(3) {
-            @extend .cats, :nth-child(1);
+            @extend .cats:nth-child(1);
         }
 
     }
