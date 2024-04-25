@@ -1,1 +1,1 @@
-# gridea_frontend_course
+Biltek Gridea Frontend Course Assignments
